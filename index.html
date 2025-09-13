@@ -21,6 +21,22 @@
         <h1>Gobinda Kumar Sahani</h1>
         <p class="tagline">Professional Freelancer • Data Specialist • Developer</p>
       </div>
+      <!-- Custom Video Section -->
+      <div class="header-video">
+        <video 
+          id="headerVideo" 
+          autoplay 
+          muted 
+          loop 
+          playsinline
+          poster="assets/uu.jpg">
+          <source src="assets/header-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+          <button class="video-toggle" onclick="toggleVideo()">⏸️</button>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -110,6 +126,23 @@
       </div>
     </section>
   </main>
+  
+  <!-- Popup Video (Right Side Bottom) -->
+  <div class="popup-video-container">
+    <video 
+      id="popupVideo" 
+      autoplay 
+      muted 
+      loop 
+      playsinline>
+      <source src="assets/popup-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="popup-video-controls">
+      <button class="popup-toggle" onclick="togglePopupVideo()">⏸️</button>
+      <button class="popup-close" onclick="closePopupVideo()">✕</button>
+    </div>
+  </div>
   
   <footer class="footer">
     <div class="container">
