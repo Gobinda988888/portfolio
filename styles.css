@@ -531,6 +531,121 @@ body::before {
   margin-bottom: 2rem;
 }
 
+/* Professional Contact Card */
+.professional-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.professional-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.6);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+}
+
+.card-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 215, 0, 0.6);
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.card-profile-img:hover {
+  transform: scale(1.1);
+  border-color: rgba(255, 215, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.card-content {
+  flex: 1;
+  min-height: 40px;
+}
+
+.card-name {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.card-name:hover {
+  color: #32CD32;
+  text-decoration: underline;
+}
+
+.card-title {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-phone {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.card-phone strong {
+  color: #FFD700;
+}
+
+.card-platforms {
+  margin-top: 1rem;
+}
+
+.platform-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #32CD32);
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.platform-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Responsive Professional Card */
+@media (max-width: 768px) {
+  .professional-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+  }
+}
+
 .contact-info p {
   color: rgba(255, 255, 255, 0.9);
   margin: 0.8rem 0;
