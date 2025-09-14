@@ -1,6 +1,51 @@
-// Modern portfolio script with iLovePDF-like interactions
+// Modern portfolio script with GitHub profile features
 document.addEventListener('DOMContentLoaded', function() {
   
+  // Typing Animation
+  const typingTexts = [
+    "Full Stack Developer",
+    "Python Programmer", 
+    "Data Specialist",
+    "Freelancer",
+    "Creative Problem Solver",
+    "Web Development Expert"
+  ];
+  
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingElement = document.getElementById('typingText');
+  
+  function typeAnimation() {
+    const currentText = typingTexts[textIndex];
+    
+    if (isDeleting) {
+      typingElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && charIndex === currentText.length) {
+      typeSpeed = 2000; // Pause at end
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % typingTexts.length;
+      typeSpeed = 500; // Pause before starting new text
+    }
+    
+    setTimeout(typeAnimation, typeSpeed);
+  }
+  
+  // Start typing animation
+  if (typingElement) {
+    typeAnimation();
+  }
+
   // Smooth scroll for navigation (if added later)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
