@@ -184,13 +184,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const rate = scrolled * -0.5;
     document.body.style.backgroundPosition = `0 ${rate}px`;
     
-    // Hide header video and logo/name on scroll
+    // Hide entire header on scroll
+    const header = document.querySelector('.header');
     const headerVideo = document.querySelector('.header-video');
     const logo = document.querySelector('.logo');
-    const heroTitle = document.querySelector('.hero h1');
-    const heroSubtitle = document.querySelector('.hero p');
+    const heroTitle = document.querySelector('.hero-title');
+    const heroSubtitle = document.querySelector('.hero-subtitle');
     
-    if (scrolled > 150) {
+    if (scrolled > 100) {
+      // Hide entire header
+      if (header) {
+        header.style.opacity = '0';
+        header.style.transform = 'translateY(-100px)';
+        header.style.pointerEvents = 'none';
+        header.style.visibility = 'hidden';
+      }
+      
       // Hide header video
       if (headerVideo) {
         headerVideo.style.opacity = '0';
@@ -212,6 +221,14 @@ document.addEventListener('DOMContentLoaded', function() {
         heroSubtitle.style.transform = 'translateY(-20px)';
       }
     } else {
+      // Show entire header
+      if (header) {
+        header.style.opacity = '1';
+        header.style.transform = 'translateY(0)';
+        header.style.pointerEvents = 'auto';
+        header.style.visibility = 'visible';
+      }
+      
       // Show header video
       if (headerVideo) {
         headerVideo.style.opacity = '1';
