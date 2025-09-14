@@ -307,12 +307,14 @@ body::before {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 0.5rem;
+  transition: all 0.5s ease;
 }
 
 .tagline {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
+  transition: all 0.5s ease;
 }
 .section {
   background: rgba(0, 0, 0, 0.4);

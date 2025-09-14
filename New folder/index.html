@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Mobile - Your Portable PDF Editor</title>
+    <meta name="description" content="Turn your mobile device into a portable PDF editor. Scan, edit, and share documents from your smartphone and tablet.">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA meta tags -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF Mobile</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Scan, edit and share documents from your 
+                    <span class="highlight">smartphone and tablet</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Turn your mobile device or tablet into a portable PDF editor. Keep projects moving and stay productive by working with your favorite PDF tools anytime, anywhere.
+                </p>
+                <div class="hero-actions">
+                    <a href="#tools" class="cta-button primary">
+                        <i class="fas fa-tools"></i>
+                        Try Tools Now
+                    </a>
+                    <a href="#features" class="cta-button secondary">
+                        <i class="fas fa-play"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="app-title">PDF Mobile</div>
+                                <div class="app-tools">
+                                    <div class="tool-icon"><i class="fas fa-compress-alt"></i></div>
+                                    <div class="tool-icon"><i class="fas fa-edit"></i></div>
+                                    <div class="tool-icon"><i class="fas fa-signature"></i></div>
+                                    <div class="tool-icon"><i class="fas fa-camera"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <h2 class="section-title">Complete PDF Toolkit</h2>
+            <p class="tools-subtitle">Everything you need to work with PDFs, all in one place</p>
+            
+            <!-- Demo Notice -->
+            <div class="demo-notice">
+                <div class="demo-content">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Interactive Demo Mode</strong>
+                        <p>Click on any tool below to try our interactive file processing demo. This is a prototype - actual PDF processing requires backend integration.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Organize PDF Tools -->
+            <div class="tools-category">
+                <h3 class="category-title">
+                    <i class="fas fa-layer-group"></i>
+                    Organize PDF
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h4>Organize PDF</h4>
+                        <p>Rearrange, add, delete, and rotate PDF pages to get your document organized the way you want.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        <h4>Merge PDF</h4>
+                        <p>Combine multiple PDF files into one document. Perfect for consolidating reports and documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4>Split PDF</h4>
+                        <p>Extract specific pages or split your PDF into multiple separate documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                        <h4>Remove Pages</h4>
+                        <p>Delete unwanted pages from your PDF documents quickly and easily.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-export"></i>
+                        </div>
+                        <h4>Extract Pages</h4>
+                        <p>Extract specific pages from your PDF and save them as separate documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>Scan to PDF</h4>
+                        <p>Use your device camera to scan documents and convert them to high-quality PDF files.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Optimize PDF</h4>
+                        <p>Optimize your PDF files for better performance and faster loading times.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <h4>Compress PDF</h4>
+                        <p>Reduce PDF file size while maintaining quality. Perfect for email sharing and storage.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Repair PDF</h4>
+                        <p>Fix corrupted or damaged PDF files and recover your important documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>OCR PDF</h4>
+                        <p>Convert scanned documents into searchable and editable text using OCR technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert to PDF Tools -->
+            <div class="tools-category">
+                <h3 class="category-title">
+                    <i class="fas fa-arrow-right"></i>
+                    Convert to PDF
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h4>JPG to PDF</h4>
+                        <p>Convert JPG, PNG, and other image formats to PDF documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h4>WORD to PDF</h4>
+                        <p>Convert Microsoft Word documents to PDF format while preserving formatting.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h4>POWERPOINT to PDF</h4>
+                        <p>Convert PowerPoint presentations to PDF format for easy sharing.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h4>EXCEL to PDF</h4>
+                        <p>Convert Excel spreadsheets to PDF while maintaining formatting and layout.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>HTML to PDF</h4>
+                        <p>Convert web pages and HTML files to PDF documents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert from PDF Tools -->
+            <div class="tools-category">
+                <h3 class="category-title">
+                    <i class="fas fa-arrow-left"></i>
+                    Convert from PDF
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h4>PDF to JPG</h4>
+                        <p>Convert PDF pages to high-quality JPG images for easy sharing and viewing.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h4>PDF to WORD</h4>
+                        <p>Convert PDF documents to editable Word files with accurate formatting.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h4>PDF to POWERPOINT</h4>
+                        <p>Convert PDF files to PowerPoint presentations for easy editing.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h4>PDF to EXCEL</h4>
+                        <p>Extract tables and data from PDFs and convert to Excel spreadsheets.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <h4>PDF to PDF/A</h4>
+                        <p>Convert PDFs to PDF/A format for long-term archival and compliance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit PDF Tools -->
+            <div class="tools-category">
+                <h3 class="category-title">
+                    <i class="fas fa-edit"></i>
+                    Edit PDF
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h4>Rotate PDF</h4>
+                        <p>Rotate PDF pages to the correct orientation for better viewing and printing.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h4>Add Page Numbers</h4>
+                        <p>Add page numbers to your PDF documents with customizable formatting and positioning.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h4>Add Watermark</h4>
+                        <p>Add text or image watermarks to protect your documents and add branding.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-crop"></i>
+                        </div>
+                        <h4>Crop PDF</h4>
+                        <p>Remove unwanted margins and areas from your PDF pages.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-highlighter"></i>
+                        </div>
+                        <h4>Edit PDF</h4>
+                        <p>Add text, images, annotations, and comments to your PDF documents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF Security Tools -->
+            <div class="tools-category">
+                <h3 class="category-title">
+                    <i class="fas fa-shield-alt"></i>
+                    PDF Security
+                </h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-unlock"></i>
+                        </div>
+                        <h4>Unlock PDF</h4>
+                        <p>Remove password protection from PDF files when you have the right credentials.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Protect PDF</h4>
+                        <p>Add password protection and set permissions to secure your PDF documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-signature"></i>
+                        </div>
+                        <h4>Sign PDF</h4>
+                        <p>Add digital signatures to authenticate and secure your PDF documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-eraser"></i>
+                        </div>
+                        <h4>Redact PDF</h4>
+                        <p>Permanently remove sensitive information from PDF documents.</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-not-equal"></i>
+                        </div>
+                        <h4>Compare PDF</h4>
+                        <p>Compare two PDF documents and highlight the differences between them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why choose PDF Mobile?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>PDF Editor</h3>
+                    <p>Include colorful comments and annotations in your PDF to highlight important information.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>e-Signing and Scanner</h3>
+                    <p>Sign any document from your smartphone and tablet, no printing required. e-Sign and send PDFs right away.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>File manager</h3>
+                    <p>Keep your files organized on your device. Store your documents easily and efficiently.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Work offline</h3>
+                    <p>Access and edit your documents even without an internet connection. Perfect for productivity on the go.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your documents are processed securely on your device. We prioritize your privacy and data security.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Cloud Integration</h3>
+                    <p>Seamlessly sync with Google Drive, Dropbox, and other cloud storage services for easy access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="download">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Turn your mobile device into a portable PDF Editor and Reader</h2>
+                <p>Streamline your document workflow with our powerful mobile app</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn google-play">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span class="small">Get it on</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn app-store">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span class="small">Download on the</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Options -->
+    <section class="platforms">
+        <div class="container">
+            <h2>Looking for another solution?</h2>
+            <div class="platform-buttons">
+                <a href="#" class="platform-btn">
+                    <i class="fab fa-apple"></i>
+                    <span>iOS</span>
+                </a>
+                <a href="#" class="platform-btn">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                </a>
+                <a href="#" class="platform-btn">
+                    <i class="fab fa-apple"></i>
+                    <span>MacOS</span>
+                </a>
+                <a href="#" class="platform-btn">
+                    <i class="fab fa-windows"></i>
+                    <span>Windows</span>
+                </a>
+                <a href="#" class="platform-btn">
+                    <i class="fas fa-globe"></i>
+                    <span>Web</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">PDF Mobile Desktop</a></li>
+                        <li><a href="#">PDF Mobile</a></li>
+                        <li><a href="#">PDF API</a></li>
+                        <li><a href="#">Image Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Developers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 PDF Mobile - Your PDF Editor</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script-new.js"></script>
+</body>
+</html>
